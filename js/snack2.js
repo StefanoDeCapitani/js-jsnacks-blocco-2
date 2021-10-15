@@ -2,12 +2,15 @@
 Aggiungi elementi all’array che ha meno elementi
 fino a quando ne avrà tanti quanti l’altro. */
 
-const array1 = [15, 2, 7];
-const array2 = [5];
+/* const array1 = [15, 2, 7];
+const array2 = [5]; */
+
+const array1 = ["ciao"];
+const array2 = ["hola", "hello"];
 
 //imposto un ciclo che si interromperà quando i due array avranno la stessa lunghezza
 console.log(
-  "I due array hanno la stessa lunghezza?: " + array1.lenght != array2.lenght
+  "I due array hanno la stessa lunghezza?: " + array1.length != array2.length
 );
 while (array1.length != array2.length) {
   //genero un nuovo elemento da aggiungere all'array deficitario
@@ -15,8 +18,8 @@ while (array1.length != array2.length) {
   console.log(
     "Nuovo elemento da inserire nell'array deficitarion: " + newElement
   );
-  //Imposto una condizione per definire quale dei due array ha un numero maggiore di elementi
-  if (array1.length < array2.lenght) {
+  //Imposto un if per definire quale dei due array ha un numero maggiore di elementi
+  if (array1.length < array2.length) {
     //Aggiungo l'elemento generato all'array deficitario
     console.log("Inserisco il nuovo elemento nell'array 1");
     array1.push(newElement);
