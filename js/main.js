@@ -12,12 +12,15 @@ console.log("number: " + number);
 //Verifico che il number ottenuto non sia un Nan
 console.log("number is Nan?: " + isNaN(number));
 if (!isNaN(number)) {
-  //Testo se l'entry è pari e
+  //Testo se l'entry è pari e assegno il valore alla variabile ePari
   let ePari = entry % 2 === 0;
-  console.log("L'entry è pari?");
+  console.log("L'entry è pari? " + ePari);
+  //Se ePari
   if (ePari) {
+    //Stampo il numero
     alert(number);
   } else {
+    //Stampo il numero successivo
     alert(number + 1);
   }
 }
